@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                             width: 45,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Color.fromARGB(255, 112, 87, 202),
+                              color: Color.fromARGB(255, 46, 5, 254),
                             ),
                           ), //container circulo
                           SizedBox(
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                             height: 45,
                             width: 45,
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 112, 87, 202),
+                              color: Color.fromARGB(255, 46, 5, 254),
                               borderRadius: BorderRadius.only(
                                 bottomLeft: (Radius.circular(80)),
                               ),
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                       height: 100,
                       width: 50,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 112, 87, 202),
+                          color: Color.fromARGB(255, 46, 5, 254),
                           borderRadius: BorderRadius.only(
                             topRight: (Radius.circular(80)),
                             bottomLeft: (Radius.circular(80)),
@@ -97,7 +97,7 @@ class HomePage extends StatelessWidget {
                       height: 40,
                       width: 270,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 112, 87, 202),
+                          color: Color.fromARGB(255, 46, 5, 254),
                           borderRadius: BorderRadius.circular(5)),
                       child: const Align(
                         alignment: Alignment.center,
@@ -119,10 +119,10 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(5)),
                         child: Row(children: [
-                          SizedBox(width: 5),
+                          SizedBox(width: 70),
                           Image.asset('images/google.png',
                               width: 20, height: 20),
-                          SizedBox(width: 60),
+                          SizedBox(width: 5),
                           Align(
                             alignment: Alignment.center,
                             child: Text(
