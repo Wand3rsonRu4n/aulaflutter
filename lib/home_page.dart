@@ -116,20 +116,25 @@ class HomePage extends StatelessWidget {
                         height: 40,
                         width: 270,
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            'Sign Up with Google',
-                            style: TextStyle(
-                                fontSize: 11,
-                                fontFamily: 'Arial',
-                                color: Colors.black),
-                            textAlign: TextAlign.center,
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Row(children: [
+                          SizedBox(width: 5),
+                          Image.asset('images/google.png',
+                              width: 20, height: 20),
+                          SizedBox(width: 60),
+                          Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Sign Up with Google',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  fontFamily: 'Arial',
+                                  color: Colors.black),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
-                        )),
+                        ])),
                   ],
                 ),
               ),
