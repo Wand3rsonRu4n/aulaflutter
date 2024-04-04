@@ -25,9 +25,10 @@ class HomePage extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
+                          SizedBox(height: 10),
                           Container(
-                            height: 45,
-                            width: 45,
+                            height: 40,
+                            width: 40,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Color.fromARGB(255, 46, 5, 254),
@@ -37,8 +38,8 @@ class HomePage extends StatelessWidget {
                             height: 5,
                           ),
                           Container(
-                            height: 45,
-                            width: 45,
+                            height: 40,
+                            width: 40,
                             decoration: BoxDecoration(
                               color: Color.fromARGB(255, 46, 5, 254),
                               borderRadius: BorderRadius.only(
@@ -54,7 +55,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       height: 100,
-                      width: 50,
+                      width: 45,
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 46, 5, 254),
                           borderRadius: BorderRadius.only(
@@ -123,16 +124,13 @@ class HomePage extends StatelessWidget {
                           Image.asset('images/google.png',
                               width: 20, height: 20),
                           SizedBox(width: 5),
-                          Align(
-                            alignment: Alignment.center,
-                            child: Text(
-                              'Sign Up with Google',
-                              style: TextStyle(
-                                  fontSize: 11,
-                                  fontFamily: 'Arial',
-                                  color: Colors.black),
-                              textAlign: TextAlign.center,
-                            ),
+                          Text(
+                            'Sign Up with Google',
+                            style: TextStyle(
+                                fontSize: 11,
+                                fontFamily: 'Arial',
+                                color: Colors.black),
+                            textAlign: TextAlign.center,
                           ),
                         ])),
                   ],
