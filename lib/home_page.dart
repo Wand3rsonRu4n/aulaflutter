@@ -10,8 +10,8 @@ class HomePage extends StatelessWidget {
         height: double.infinity,
         width: double.infinity,
         child: Container(
-          height: 500,
-          width: 400,
+          height: 792,
+          width: 367,
           color: Colors.black,
           child: Column(
             children: [
@@ -83,29 +83,29 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 25, fontFamily: 'Arial', color: Colors.white),
               )),
-              SizedBox(height: 20), //primeiro texto
+              SizedBox(height: 12), //primeiro texto
               Container(
                   child: Text('Manage your expenses',
                       style: TextStyle(fontSize: 18, color: Colors.grey))),
               Container(
                   child: Text('Seamlessly',
                       style: TextStyle(fontSize: 18, color: Colors.grey))),
-              SizedBox(height: 130), //segundo texto
+              SizedBox(height: 165), //segundo texto
               Container(
                 child: Column(
                   children: [
                     Container(
-                      height: 40,
-                      width: 270,
+                      height: 43,
+                      width: 330,
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 46, 5, 254),
-                          borderRadius: BorderRadius.circular(5)),
+                          borderRadius: BorderRadius.circular(10)),
                       child: const Align(
                         alignment: Alignment.center,
                         child: const Text(
                           'Sign Up with Email ID',
                           style: TextStyle(
-                              fontSize: 11,
+                              fontSize: 13,
                               fontFamily: 'Arial',
                               color: Colors.white),
                           textAlign: TextAlign.center,
@@ -114,20 +114,20 @@ class HomePage extends StatelessWidget {
                     ),
                     SizedBox(height: 15),
                     Container(
-                        height: 40,
-                        width: 270,
+                        height: 43,
+                        width: 330,
                         decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5)),
+                            borderRadius: BorderRadius.circular(10)),
                         child: Row(children: [
-                          SizedBox(width: 70),
+                          SizedBox(width: 90),
                           Image.asset('images/google.png',
                               width: 20, height: 20),
                           SizedBox(width: 5),
                           Text(
                             'Sign Up with Google',
                             style: TextStyle(
-                                fontSize: 11,
+                                fontSize: 13,
                                 fontFamily: 'Arial',
                                 color: Colors.black),
                             textAlign: TextAlign.center,
@@ -138,11 +138,20 @@ class HomePage extends StatelessWidget {
               ),
               SizedBox(height: 75),
               Container(
-                  child: Text(
-                'Already have a account? Sign In',
-                style: TextStyle(
-                    fontSize: 12, fontFamily: 'Arial', color: Colors.white),
-              ))
+                  child: Text.rich(TextSpan(
+                      text: 'Already have a account?',
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontFamily: 'Arial',
+                          color: Colors.white),
+                      children: <TextSpan>[
+                    TextSpan(
+                        text: 'Sign In',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          fontWeight: FontWeight.bold,
+                        ))
+                  ])))
             ],
           ),
         ),
